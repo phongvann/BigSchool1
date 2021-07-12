@@ -3,14 +3,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+<<<<<<< HEAD
 using BigSchool.Models;
 using System.Data.Entity;
 using BigSchool.ViewModels;
+=======
+>>>>>>> 8a9d73b6c75c6e75f29e46ac5688e461e4185ebf
 
 namespace BigSchool.Controllers
 {
     public class HomeController : Controller
     {
+<<<<<<< HEAD
         private ApplicationDbConText _dbConText;
        
 
@@ -27,6 +31,11 @@ namespace BigSchool.Controllers
           
             return View(upcommingCourses);
 
+=======
+        public ActionResult Index()
+        {
+            return View();
+>>>>>>> 8a9d73b6c75c6e75f29e46ac5688e461e4185ebf
         }
 
         public ActionResult About()

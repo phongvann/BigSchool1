@@ -151,7 +151,11 @@ namespace BigSchool.Controllers
         {
             if (ModelState.IsValid)
             {
+<<<<<<< HEAD
                 var user = new ApplicationUser { UserName = model.Email, Email = model.Email, Name = model.Name };
+=======
+                var user = new ApplicationUser { UserName = model.Email, Email = model.Email };
+>>>>>>> 8a9d73b6c75c6e75f29e46ac5688e461e4185ebf
                 var result = await UserManager.CreateAsync(user, model.Password);
                 if (result.Succeeded)
                 {
@@ -266,8 +270,11 @@ namespace BigSchool.Controllers
         //
         // GET: /Account/ResetPasswordConfirmation
         [AllowAnonymous]
+<<<<<<< HEAD
         
        
+=======
+>>>>>>> 8a9d73b6c75c6e75f29e46ac5688e461e4185ebf
         public ActionResult ResetPasswordConfirmation()
         {
             return View();

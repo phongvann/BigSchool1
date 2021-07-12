@@ -21,6 +21,7 @@ input,
 select,
 textarea {
     max-width: 280px;
+<<<<<<< HEAD
     .course{
                list-style: none;
            }
@@ -40,4 +41,6 @@ textarea {
         top: 0;
         left: 70px;
     }
+=======
+>>>>>>> 8a9d73b6c75c6e75f29e46ac5688e461e4185ebf
 }
