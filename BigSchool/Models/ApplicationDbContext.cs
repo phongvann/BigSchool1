@@ -11,7 +11,10 @@ namespace BigSchool.Models
     {
         public DbSet<Course> Courses { get; set; }
         public DbSet<Category> Categories { get; set; }
+<<<<<<< HEAD
         public DbSet<Attendance> Attendances { get; set; }
+=======
+>>>>>>> 8a9d73b6c75c6e75f29e46ac5688e461e4185ebf
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {
@@ -21,6 +24,7 @@ namespace BigSchool.Models
         {
             return new ApplicationDbContext();
         }
+<<<<<<< HEAD
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Attendance>()
@@ -29,5 +33,7 @@ namespace BigSchool.Models
                 .WillCascadeOnDelete(false);
             base.OnModelCreating(modelBuilder);
         }
+=======
+>>>>>>> 8a9d73b6c75c6e75f29e46ac5688e461e4185ebf
     }
 }

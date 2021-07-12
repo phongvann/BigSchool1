@@ -60,7 +60,10 @@ namespace BigSchool.Models
 
         [Display(Name = "Remember me?")]
         public bool RememberMe { get; set; }
+<<<<<<< HEAD
        
+=======
+>>>>>>> 8a9d73b6c75c6e75f29e46ac5688e461e4185ebf
     }
 
     public class RegisterViewModel
@@ -80,9 +83,12 @@ namespace BigSchool.Models
         [Display(Name = "Confirm password")]
         [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
         public string ConfirmPassword { get; set; }
+<<<<<<< HEAD
         [Required]
         [StringLength(255)]
         public string Name { get; set; }
+=======
+>>>>>>> 8a9d73b6c75c6e75f29e46ac5688e461e4185ebf
     }
 
     public class ResetPasswordViewModel
